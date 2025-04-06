@@ -5,5 +5,3 @@ redis
 openai
 python-dotenv
 pydantic
-transformers 
-torch 
