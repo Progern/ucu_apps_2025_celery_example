@@ -66,8 +66,7 @@ def process_llm_request(self, prompt: str):
         if USE_OPENAI:
             log.info(f"Task {task_id}: Processing with OpenAI...")
             response = openai.chat.completions.create(
-                # Using gpt-3.5-turbo as a default, change if needed (like your previous gpt-4o)
-                model="gpt-3.5-turbo",
+                model="gpt-4o",
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": prompt}
